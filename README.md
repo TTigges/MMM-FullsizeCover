@@ -17,7 +17,7 @@ modules: [
 
 ]
 ````
-##Developer Notes
+## Developer Notes
 This is a quickly written module for [request](https://forum.magicmirror.builders/topic/6236/show-a-picture-infont-of-everything-with-a-button) on the [MagicMirror Forum](https://forum.magicmirror.builders).
 As I have no button to test with, I cannot guarantee that the communication between both modules works. Let me know if you have any issues or suggestions for improvement.
 
