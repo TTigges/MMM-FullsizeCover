@@ -24,7 +24,7 @@ As I have no button to test with, I cannot guarantee that the communication betw
 The MIT License (MIT)
 =====================
 
-Copyright © 2016 PtrBld
+Copyright © 2018 TTigges
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
