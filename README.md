@@ -11,7 +11,7 @@ modules: [
 	{
 		module: 'MMM-FullsizeCover',
 		config: {
-			imageFile: "test.jpg"	// the image has to be within the module folder
+			imageFile: "test.png"	// the image has to be within the module folder
 		}
 	}
 
