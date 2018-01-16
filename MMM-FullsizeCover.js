@@ -23,21 +23,27 @@ Module.register('MMM-FullsizeCover',{
 	},
 
 	notificationReceived: function(notification, payload, sender) {
-		// expected notification: showImage // (notification set in MMM-Button config)
+		// expected notification: BUTTON_PRESSED // (notification set in MMM-Button config)
 		// expected playload: true/false
 		// expected sender: MMM-Button or mmm-button?
-		if (notification === "showImage" && sender === "MMM-Button") {
-			if (payload === true) {
-				document.getElementsByClassName("MMM-FullsizeCover")[0].classList.add("show-image");
+		if (notification === "BUTTON_PRESSED" && sender === "MMM-Button") {
+			var cover = document.getElementsByClassName("MMM-FullsizeCover");
+			if (cover[0].classList.contains("hide-image")) {
+				cover[0].classList.remove("hide-image");
+				cover[0].classList.add("show-image");
 			}
-			else if (payload === false ) {
-				document.getElementsByClassName("MMM-FullsizeCover")[0].classList.remove("hide-image");
+			else if (cover[0].classList.contains("show-image")) {
+				cover[0].classList.remove("show-image");
+				cover[0].classList.add("hide-image");
+			}
+			else {
+				cover[0].classList.add("show-image");
 			}
 		}
 	},
 
 	getDom: function() {
-
+		document.getElementsByClassName("MMM-FullsizeCover")[0].classList.remove("hide-image");
 		wrapper = document.createElement("img");
 		wrapper.src =  this.data.path + "/" + this.config.imageFile;
 		return wrapper;
