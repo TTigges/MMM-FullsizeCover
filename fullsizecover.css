@@ -1,7 +1,9 @@
 .MMM-FullsizeCover  {
-	background: #000000;
+	position: fixed;
 	height: 100%;
-	padding-top: 50px;  /* play around to set the height */
+	width: 100%;
+	background: #000000;
+	padding-top: 25%;  /* play around to set the height */
 	display: none;
 }
 .MMM-FullsizeCover.hide-image {
